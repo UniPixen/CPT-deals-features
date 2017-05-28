@@ -131,7 +131,7 @@ global $nameAFTArray;
 		if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
 			return $post_id;
 
-		$slug = "themes";//themesgloriousthemes
+		$slug = "deals";//deals
     	if($slug != $post->post_type)
         	return $post_id;
         
@@ -153,5 +153,5 @@ global $nameAFTArray;
 		} 
 
 
-	} //save_themes_meta_box_gloriousthemes
+	} //save_themes_meta_box_themes
 	add_action("save_post", "save_featuresthemes_meta_box_themes", 10, 3);
